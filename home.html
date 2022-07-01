@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Parking management system</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="s
+ha384-
+Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<div class="header">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 text-center" id="header">
+<h1> Parking Lot Management System</h1>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-6 text-center mb-">
+<h2 class="register">Registration Form</h2>
+<form action="save.php" method="post">
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text" id="owner">Vehicle Owner Name:</span>
+</div>
+<input type="text" name="owner_name" class="form-control">
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text"> Vehicle Name:</span>
+</div>
+<input type="text" name="vehicle_name" class="form-control">
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text"> Vehicle Number:</span>
+</div>
+<input type="text" name="vehicle_number" class="form-control">
+</div>
+
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text"> Entry Date:</span>
+</div>
+<input type="date" name="entry_date" class="form-control">
+</div>
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text">Exit Date:</span>
+</div>
+<input type="date" name="exit_date" class="form-control">
+</div><br>
+<div id="button"><a href="home.html"><b>SUBMIT</b></a></div>
+</form>
+</div>
+
+</div>
+</div>
+</div><br><br>
+
+<section>
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<h2 class="register1">All Vehicle Records</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text" >Search</span>
+</div>
+
+<input type="text" class="form-
+control" onkeyup="search()" id="text" placeholder="Search Vehicle Details">
+
+</div>
+<table class="table table-striped" id="table" >
+<thead>
+<tr>
+<th>Owner Name</th>
+<th>Vehicle Name</th>
+<th>Vehicle Number</th>
+<th>Entry Date</th>
+
+<th>Exit Date</th>
+<th>Delete Record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>abhishek kumar</td>
+<td>suzuki</td>
+<td>UP 83 A 8090 </td>
+<td> 25/09/2021 </td>
+<td>28/09/2021</td>
+<td><a href="delete-inline.php">Delete</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<br>
+<div class="class"><H3>PAYMENT METHOD<hr></H3><a href="pay.html"><ul><li>DEBIT/CREDIT CARD</li></ul></a></div>
+<br><br><br><br><br>
+<footer class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+    <div class="border-t border-gray-200">
+      <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+        <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+          <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+            <label for="footer-field" class="leading-7 text-sm text-gray-600">Leave your query here</label>
+            <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <input type="submit" onclick="click()" id="button1">
+          
+          
+          </div>
+        </div>
+        </div>
+      </div>
+    </div><br><br><br>
+  </footer>
+  
+  </body>
+</html>
